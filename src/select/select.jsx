@@ -15,9 +15,10 @@ export default createReactClass({
     }
   },
   render () {
-    const { items, label, ...rest } = this.props
+    const { items, label, style, ...rest } = this.props
+    const customStyle = { display: 'flex', flexDirection: 'column' }
     return (
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div style={style || customStyle}>
         <InputLabel style={{ fontSize: 12 }}>{label}</InputLabel>
         <Select fullWidth {...rest}>
           {items.map(x => (
