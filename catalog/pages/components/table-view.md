@@ -8,5 +8,6 @@
     {label: 'Genre', dataKey: 'genre' },
     {label: 'Rating from 10', dataKey: 'rating' }
   ]}
+  selectType={selectType}
 />
 ```

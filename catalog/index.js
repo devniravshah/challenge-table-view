@@ -35,7 +35,8 @@ const pages = [
         imports: {
           TableView: require('../src').TableView,
           Select: require('../src').Select,
-          data: require('./pages/fixtures/movies.json')
+          data: require('./pages/fixtures/movies.json'),
+          selectType: require('./pages/fixtures/selectCategories.json')
         },
         content: require('./pages/components/table-view.md')
       }
