@@ -28,6 +28,17 @@ const pages = [
           Select: require('../src').Select
         },
         content: require('./pages/components/select.md')
+      },
+      {
+        path: '/components/table-view',
+        title: 'Table View',
+        imports: {
+          TableView: require('../src').TableView,
+          Select: require('../src').Select,
+          data: require('./pages/fixtures/movies.json'),
+          selectType: require('./pages/fixtures/selectCategories.json')
+        },
+        content: require('./pages/components/table-view.md')
       }
     ]
   }
